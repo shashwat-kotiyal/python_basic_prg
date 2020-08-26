@@ -1,7 +1,10 @@
 
 nums =[1,2,3,4]
-#how something is iteratable  it should have __iter()__
+print("#if Something(Object) is iteratable must implement __iter__")
+print("#dir(): return all the properties and method of the object")
 print (dir(nums))
+
+print("# get an iterator using iter()")
 #print (next (nums)) list operator is not a iterator
 #i_nums = nums.__iter__() same as below
 i_nums = iter(nums)
@@ -15,7 +18,7 @@ while True:
     except StopIteration:
         break
 """
-# pratical example is to make class iteratable
+
 
 class MyRange:
     def __init__(self,start,end):
@@ -24,6 +27,7 @@ class MyRange:
 
     def __iter__(self):
         return self
+    
     def __next__(self):
         if self.value>= self.end:
             raise StopIteration
@@ -32,10 +36,10 @@ class MyRange:
         return current
 
 num = MyRange(1, 10)
+print("# pratical example is to make class iteratable")
 print(next(num))
 print(next(num))
-#generators used to createing extremly useful easy to read iterators ,
-# look like normal functions but instead of return they yeid the value, keep this value and use agian
+
 
 def my_range(start):
     current =start
@@ -44,6 +48,7 @@ def my_range(start):
         current+=1
 
 nums=my_range(1)
-
+print("#generators used to createing extremly useful easy to read iterators ,")
+print("# look like normal functions but instead of return they yeid the value, keep this value and use agian")
 for nu in num:
     print(nu)

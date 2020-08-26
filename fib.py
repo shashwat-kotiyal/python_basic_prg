@@ -7,7 +7,7 @@ def fib(n):
 
 n = int(input("enter the no of terms:\t"))
 if n<=0:
-    print "Enter positive integer"
+    print ("Enter positive integer")
 else:
     print("fibonacci sequence")
     for i in range(n):
