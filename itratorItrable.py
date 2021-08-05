@@ -1,14 +1,14 @@
 
 nums =[1,2,3,4]
-print("#if Something(Object) is iteratable must implement __iter__")
+print("#if Something(Object) is iteratable must implement __iter__ and __next__")
 print("#dir(): return all the properties and method of the object")
-print (dir(nums))
+print ("nums:",dir(nums))
 
 print("# get an iterator using iter()")
 #print (next (nums)) list operator is not a iterator
 #i_nums = nums.__iter__() same as below
 i_nums = iter(nums)
-print (dir(i_nums))
+print ("\ninums:",dir(i_nums))
 
 """
 while True:

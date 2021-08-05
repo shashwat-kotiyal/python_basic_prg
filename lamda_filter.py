@@ -23,7 +23,7 @@ n= [5,4,3,2,1]
 print(list(map(lambda x:x*x,n)))
 
 #filter item out of sequence and return filter list
-print("#filter(condition/function,list)")
+print("# filter(condition/function,list)")
 print ("filter greater then 3")
 #print (filter(lambda x:if x>3,n))
 print (list(filter(lambda x:x>3,n)))
