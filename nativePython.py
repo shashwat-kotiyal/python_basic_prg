@@ -5,7 +5,7 @@
 list =[1,2,3]
 
 for v in list:
-    print v
+    print(v)
 """
 #  for name in iterable:                   #iterable produce a strem of values,agssign stream value to name,execute statement
 #        statements
@@ -33,4 +33,4 @@ combined= "".join(iterable)
 #how i  get the index----> range(len(list)) ---better way to do it ---> we have enumarate
 
 for i,v in enumerate(list):             # give 2 values index and value , it give list of tuples
-    print i,v
+    print(i,v)

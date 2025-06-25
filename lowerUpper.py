@@ -17,4 +17,4 @@ str = 'shashWAT'
 str = list(str)       #conversion of str to slist is important as str object will not support assignment
 convertOpposite(str)
 str=" ".join(str)
-print str
+print(str)

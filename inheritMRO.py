@@ -7,16 +7,16 @@ Created on Wed Jul  7 23:32:22 2021
 
 
 class A():
-    def classPrint():
+    def classPrint(self):
         print("IN A")
     pass
 
 class B():
-    def classPrint():
+    def classPrint(self):
         print("IN b")
     pass
 class C(A):
-    def classPrint():
+    def classPrint(self):
         print("IN c")
     pass
 
